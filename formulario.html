@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/formulario_estilos/formulario.css">
+  <link rel="stylesheet" href="estilos/formulario_estilos/media-query-formulario.css">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <main>
+    <form>
+      <div class="form-content">
+        <div class="header">
+          <!--Header aonde vai o logo da FÚRIA-->
+        </div>
+
+        <!--Área: Dados Pessoais-->
+
+        <section>
+          <h1>Dados Pessoais</h1>
+
+          <div class="campos">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" required>
+          </div>
+          
+          <div class="campos">
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero">
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="campos">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="Ex: 000.000.000-00" required>
+          </div>
+          <div class="area-ia-cpf">
+            <p id="res">teste</p>
+          </div>
+          <div class="campos">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+              <option value="MG">Minas Gerais</option>
+            </select>
+          </div>
+          <div class="campos">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro">
+          </div>
+          <div class="campos">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" maxlength="9" placeholder="Ex: 00000-000" required>
+          </div>
+        </section>
+
+        <!--Área: Documentos-->
+
+        <section class="documentos">
+          <h1>Documentos</h1>
+          <div class="campos">
+            <label for="selfie">Foto de perfil (Selfie)</label> <input type="file" name="selfie" id="selfie">
+          </div>
+          <div class="campos">
+            <label for="documento">Documento com foto</label> <input type="file" name="documento" id="documento">
+          </div>
+
+          <div class="area-ia-arquivo">
+            <p></p>
+          </div>
+        </section>
+
+        <!--Área: Interesses-->
+
+        <section class="interesses">
+          <h1>Interesses</h1>
+
+          <div class="grupo">
+            <div class="grupo-pair">
+              <label for="cs">CS2</label>
+              <input type="checkbox" name="interesse" id="cs" value="cs2">
+            </div>
+
+            <div class="grupo-pair">
+              <label for="valorant">Valorant</label>
+              <input type="checkbox" name="interesse" id="valorant" value="valorant">
+            </div>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo-pair">
+              <label for="r6">Rainbow Six: R6</label>
+              <input type="checkbox" name="interesse" id="r6" value="rainbow six">
+            </div>
+
+            <div class="grupo-pair">
+              <label for="lol">LOL</label>
+              <input type="checkbox" name="interesse" id="lol" value="lol">
+            </div>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo-pair">
+              <label for="fut">Futebol</label>
+              <input type="checkbox" name="interesse" id="fut" value="futebol">
+            </div>
+
+            <div class="grupo-pair">
+              <label for="poker">Poker</label>
+              <input type="checkbox" name="interesse" id="poker" value="poker">
+            </div>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo-pair">
+              <label for="hardw">Hardware</label>
+              <input type="checkbox" name="interesse" id="hardw" value="hardware">
+            </div>
+
+            <div class="grupo-pair">
+              <label for="pc">PC Gamer</label>
+              <input type="checkbox" name="interesse" id="pc" value="pc-gamer">
+            </div>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo-pair">
+              <label for="e-sports">E-sports</label>
+              <input type="checkbox" name="interesse" id="e-sports" value="e-sports">
+            </div>
+
+            <div class="grupo-pair">
+              <label for="perifericos">Periféricos Gamer</label>
+              <input type="checkbox" name="interesse" id="perifericos" value="perifericos-gamer">
+            </div>
+          </div>
+        </section>
+
+        <!--Área: Redes Sociais-->
+
+        <section>
+          <h1>Redes Sociais</h1>
+          <p>
+            Vincule suas redes sociais
+          </p>
+          <div class="campos">
+            <label for="insta">Instagram</label>
+            <input type="text" name="insta" id="insta">
+          </div>
+          <div class="campos">
+            <label for="twitter">Twitter/X</label>
+            <input type="text" name="twitter" id="twitter">
+          </div>
+          <div class="campos">
+            <label for="face">Facebook</label>
+            <input type="text" name="face" id="face">
+          </div>
+        </section>
+
+        <!--Área: Links-->
+
+        <section>
+          <h1>Links</h1>
+          <p>
+            Vincule links que de assuntos que lhe interessam. Ex: E-sports, games e etc.
+          </p>
+          <label for="link">Link:</label>
+          <input type="text" name="link" id="link" placeholder="https://exemplo.com">
+          <button id="validarLink">Validar Link</button> <!--Esse button invés de estar apenas verificando o link, está enviando o formulário, como corrigir?-->
+          <p id="mensagemValidade"></p>
+        </section>
+
+        <!--Botão de envio do formulário-->
+
+        <div class="botao">
+          <input type="submit" value="Enviar" id="botao">
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <script src="formulario_script.js"></script>
+</body>
+
+</html>

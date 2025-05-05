@@ -1,0 +1,106 @@
+/*formulario.css - media-query*/
+
+@charset "UTF-8";
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    main {
+        background-color: #f1f1f1;
+    }
+
+    .header{
+        height: 150px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 800px;
+        height: 800px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .campos {
+        font-size: 1.1em;
+    }
+
+    input, select {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .grupo label {
+        font-size: 15px;
+        flex-shrink: 1;
+        flex-grow: 0;
+        
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+
+    main {
+        background-color: #f1f1f1;
+    }
+    
+    .header{
+        height: 150px;
+    }
+
+    form {
+        width: 70%;
+        max-width: 900px;
+        height: 1000px;
+
+        margin: 30px auto;
+        border-radius: 20px; 
+        padding-bottom: 40px;
+        
+    }
+
+    section {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .campos {
+        font-size: 1.15em;
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        flex: 1; 
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1em;
+        transition: border 0.3s;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        border-color: #888;
+    }
+
+
+    .botao{
+        display: flex;
+        justify-content: center;
+        width: 500px;
+      
+        margin: auto;
+        margin-bottom: 50px;
+      }
+
+}

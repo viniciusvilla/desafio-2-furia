@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*
+cadastro.css - mobile first
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+/*
+    Configuração geral da tela de cadastro
+*/
+
+section#cadastro{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 320px;
+    height: 550px;
+    border-radius: 20px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
+}
+
+/*
+    Área onde se econtra a logo da fúria
+*/
+
+section#cadastro > div#imagem{
+    display: block;
+    background:  url('../../imagens/furia_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+
+}
+
+/*
+    Configurações da área do formulário em si: h1, email, senha e etc.
+*/
+
+section#cadastro > div#formulario{
+    display: block;
+    padding: 10px;
+
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form > div.campo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 15px 0px;
+
+    
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    height: 40px;
+    padding: 5px;
+
+    border-radius: 50%;
+}
+
+div.campo > input{
+    
+    font-size: 1em;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+
+    padding-left: 10px;
+    
+}
+
+/*
+    Configurações do botão submit
+*/
+
+.botao{
+    display: block;
+    text-align: center;
+    border: 0px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.1em;
+
+    text-decoration: none;
+
+    color: black;
+
+    background-color:  rgb(240, 240, 240);
+}
+
+.botao:hover{
+    background-color:  rgb(228, 225, 225);
+}
+
+.botao:active{
+    background-color:  rgb(160, 160, 160);
+}
+
+/*
+    Área onde fica localizado o recaptch
+*/
+
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+    width: 100%; 
+    
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/cadastro_estilos/cadastro.css">
+    <link rel="stylesheet" href="estilos/cadastro_estilos/media-query-cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="imagem">
+                <!--Aqui vai a imagem da FURIA, que está no CSS-->
+            </div>
+            <div id="formulario">
+                <h1 class="sombra">Cadastro</h1>
+                <p>
+                    Seja bem-vindo(a). Realize seu cadastro abaixo
+                </p>
+                <form autocomplete="on">
+                    <!--Input de Email e Icon-->
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="email"
+                            required>
+                        <label for="email">Email: </label>
+                    </div>
+                    <!--Input de Senha e Icon-->
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                        <label for="password">Senha:</label>
+                    </div>
+                    <!-- Input de Confirmar a senha e Icon-->
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="confirm-password" id="confirm-password"
+                            placeholder="Confirme sua senha" required>
+                        <label for="confirm-password">Confirmar senha: </label>
+                    </div>
+                    <!--Verificação captcha-->
+                    <div class="g-recaptcha" data-sitekey="6LcqNC0rAAAAAAgLBruhXJdq95Rk5Fmg51azkLlj"></div>
+
+                    <input type="submit" value="Cadastrar" class="botao" id="botao">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="cadastro_script.js"></script>
+    <!-- Adiciona o script do reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>
