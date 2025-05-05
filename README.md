@@ -48,3 +48,9 @@ Esse projeto tem como objetivo simular uma solução de coleta e verificação d
 Espero que o projeto tenha ficado claro e que você consiga entender como ele funciona. Fico à disposição para dúvidas!
 
 
+### Para testar a solução:
+
+- Acesse: [https://viniciusvilla.github.io/desafio-2-furia/](https://viniciusvilla.github.io/desafio-2-furia/)
+
+Ou acesse meu GitHub: [https://github.com/viniciusvilla/desafio-2-furia](https://github.com/viniciusvilla/desafio-2-furia)
+
