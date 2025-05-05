@@ -1,6 +1,6 @@
-# desafio-2-furia
 
-# Desafio#2 - Documentação
+
+# Desafio 2 - Documentação
 
 ## Como funciona
 
@@ -33,7 +33,7 @@ No formulário, o usuário deverá preencher as seguintes categorias:
 
 ### **Links**
 
-- O usuário pode vincular links de perfis e conteúdos relevantes relacionados aos seus interesses, como páginas de e-sports, que seriam validadas e associadas ao perfil do usuário.
+- Foi implementada uma simulação de validação com IA, que identifica se o link contém palavras-chave relacionadas ao universo gamer. Essa lógica serve como exemplo de como uma IA real poderia analisar a relevância dos conteúdos vinculados ao perfil do usuário.
 
 ## Documentação do código
 
