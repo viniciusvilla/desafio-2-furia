@@ -4,7 +4,7 @@
 
 ## Como funciona
 
-O projeto consiste em uma solução para coleta de informações sobre o fã de esports, com o objetivo de oferecer uma experiência personalizada. Abaixo, estão explicadas as funcionalidades principais do sistema.
+O projeto consiste em uma solução para coleta de informações sobre o fã de esports, com o objetivo de oferecer uma experiência personalizada. Abaixo, estão explicadas as funcionalidades principais do sistema. a solução foi feita em Mobile First (dispotivos móveis) e possui media-querie para tablet e desktop.
 
 ### Tela inicial de cadastro
 
@@ -46,3 +46,5 @@ Todo o código do projeto está bem documentado e dividido em seções, explican
 Esse projeto tem como objetivo simular uma solução de coleta e verificação de dados de fãs de e-sports. Embora algumas funcionalidades não tenham sido integradas devido a limitações de tempo, a estrutura está preparada para suportar essas integrações.
 
 Espero que o projeto tenha ficado claro e que você consiga entender como ele funciona. Fico à disposição para dúvidas!
+
+
