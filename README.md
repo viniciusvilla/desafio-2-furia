@@ -1,6 +1,6 @@
 
 
-# Desafio 2 - Documentação
+# Desafio 2 - Documentação.
 
 ## Como funciona
 
